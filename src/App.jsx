@@ -13,6 +13,22 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
+  useEffect(() => {
+    async function fetchTasks() {
+      // ESSA FUNÇÃO SÓ SERÁ EXECUTADA NA PRIMEIRA VEZ QUE O USUÁRIO ACESSAR O APP
+      // > CHAMANDO A API
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos?_limit=10",
+        { method: "GET" }
+      );
+      // > PEGANDO OS DADOS
+      const data = await response.json();
+      // > ARMAZENANDO/PERSISTINDO OS DADOS NO STATE
+      setTasks(data);
+    }
+    fetchTasks();
+  }, []);
+
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
       // ATUALIZA TAREFA
