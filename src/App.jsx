@@ -14,7 +14,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  useEffect(() => {
+  /*   useEffect(() => {
     async function fetchTasks() {
       // ESSA FUNÇÃO SÓ SERÁ EXECUTADA NA PRIMEIRA VEZ QUE O USUÁRIO ACESSAR O APP
       // > CHAMANDO A API
@@ -29,7 +29,7 @@ function App() {
     }
     // SE QUISER PEGAR AS TAREFAS FAKES DA API, DESCOMENTE A LINHA ABAIXO
     //fetchTasks();
-  }, []);
+  }, []); */
 
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
