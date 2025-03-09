@@ -26,7 +26,8 @@ function App() {
       // > ARMAZENANDO/PERSISTINDO OS DADOS NO STATE
       setTasks(data);
     }
-    fetchTasks();
+    // SE QUISER PEGAR AS TAREFAS FAKES DA API, DESCOMENTE A LINHA ABAIXO
+    //fetchTasks();
   }, []);
 
   function onTaskClick(taskId) {
