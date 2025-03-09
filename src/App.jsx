@@ -7,7 +7,10 @@ import Title from "./components/Title";
 
 function App() {
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks") || [])
+    JSON.parse(
+      localStorage.getItem("tasks") ||
+        '[{"id": 1,"title": "Hi, This is a test task","description":"This is a task for test this app. You can delete this anytime!","isCompleted": false}]'
+    )
   );
 
   useEffect(() => {
