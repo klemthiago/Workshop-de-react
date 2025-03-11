@@ -57,7 +57,7 @@ To run this project locally, follow these steps:
 
 2. **Navigate to the project directory**:
    ```bash
-   cd your-repo-name
+   cd Workshop-de-react
    ```
 
 3. **Install dependencies**:
