@@ -1,7 +1,6 @@
 # Task Manager Web Application
 
-![Task Manager Screenshot](https://via.placeholder.com/800x400.png?text=Task+Manager+Screenshot)  
-*(Replace with an actual screenshot of your app)*
+![Task Manager Screenshot](./src/screenshots/print1_app.png)
 
 ## Overview
 
